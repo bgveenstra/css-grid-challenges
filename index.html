@@ -6,62 +6,61 @@
   <!-- custom styles -->
   <link rel="stylesheet" type="text/css" href="main.css">
 
-  <link rel="stylesheet" href="main.css">
+  <link type="text/css" rel="stylesheet" href="main.css">
 
   <title>CSS Grid Challenges</title>
 </head>
 <body>
-  <div class="container">
-    <header>
-      <div class="centered">
-        <a href="javascript:void(0)"><img src="ducky.svg" alt="Ducky Logo" width="150"></a>
-        <h1>Everything's Ducky</h1>
-        <nav>
-          <ul>
-            <li>Catalog</li>
-            <li>Locations</li>
-            <li>Events</li>
-            <li>Contact</li>
-          </ul>
-          <input class="search" placeholder="Search"></input>
-          <button>Push Me</button>
-        </nav>
-      </div>
-    </header>
+  <div class="header">
+    <div class="content">
+      <img src="ducky.svg" alt="Ducky Logo" width="150">
+      <h1>Everything's Ducky</h1>
+      <nav>
+        <ul>
+          <li>Catalog</li>
+          <li>Locations</li>
+          <li>Events</li>
+          <li>Contact</li>
+          <li>
+            <input placeholder="Search"></input>
+            <button>Push Me</button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
 
-    <div class="main">
-      <section>
-        <article>
-          <h2>Title of first article</h2>
-          <p>The first article on the page is just text.</p>
-        </article>
-        <article>
-          <h2>Title of second article</h2>
-          <p>This is the description for the second part of my article and it contains a useful unordered list of some information I want to display in a heirarchichal format.</p>
-          <ul>Things we like:
-            <li>Computers</li>
-            <li>Mobile Devices</li>
-            <li>Books</li>
-            <li>Sesquatch</li>
-          </ul>
-        </article>
-      </section>
+  <div class="content">
+    <div>
+      <h2>Title of first article</h2>
+      <p>The first article on the page is just text.</p>
+    </div>
+    <div>
+      <h2>Title of second article</h2>
+      <p>This is the description for the second article, and it contains a useful unordered list of information.</p>
+      <p><strong>Things we like:</strong></p>
+      <ul>
+        <li>Computers</li>
+        <li>Mobile Devices</li>
+        <li>Books</li>
+        <li>Sesquatch</li>
+      </ul>
+    </div>
 
-      <div class="row centered">
-        <div class="column four">
-          <h2 class="column-title">Buttons</h2>
-          <span id="button-set">
-            <button>One</button>
-            <button>Two</button>
-            <button>Three</button>
-          </span>
+    <div class="row">
+      <div class="column four">
+        <div class="note">
+          <h2>Buttons</h2>
+          <button>One</button>
+          <button>Two</button>
+          <button>Three</button>
           <p>These are the buttons.</p>
         </div>
+      </div>
 
-        <div class="gutter"></div>
-
-        <div class="column four">
-          <h2 class="column-title">Important List</h2>
+      <div class="column four">
+        <div class="note">
+          <h2>Important List</h2>
           <ul>
             <li>First</li>
             <li>Second</li>
@@ -69,21 +68,25 @@
             <li>Fourth</li>
           </ul>
         </div>
+      </div>
 
-        <div class="gutter"></div>
-
-        <div>
-          <h2 class="column-title">Request</h2>
-          <div id="calendar">
+      <div class="column four">
+        <div class="request">
+          <h2>Request</h2>
+          <div>
             <p>Can we get the buttons in cornflower blue?</p>
-            <span><button>Submit</button></span>
+            <button>Submit</button>
           </div>
         </div>
       </div>
     </div>
-    <footer class="row">
-      This is the footer
-    </footer>
   </div>
+
+  <div class="footer">
+    <div class="content">
+      This is the footer
+    </div>
+  </div>
+
 </body>
 </html>
